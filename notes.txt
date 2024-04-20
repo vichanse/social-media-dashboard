@@ -1,1 +1,6 @@
-notes
+First: -create the files and folders,
+       -Sass and gulpfile
+
+Second: - the design
+        - Style
+            
