@@ -3,6 +3,9 @@
 .card {
     background: var(--dark-card);
     color: var(--dark-text1);
+    width: rem(255); //TEMP
+    padding: rem(25);
+    text-align: center;
 
     &--facebook {
 
@@ -21,9 +24,27 @@
         }
 
     &__platform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
     &__icon{
+        &--facebook {
+
+        }
+
+        &--twitter {
+
+        }
+
+        &--instagram {
+
+        }
+
+        &--youtube {
+
+        }
         
     }
     &__username {
