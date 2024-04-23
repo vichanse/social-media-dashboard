@@ -5,9 +5,11 @@
     color: var(--dark-text1);
     width: rem(255); //TEMP
     padding: rem(25);
+    border-radius: rem(5);
     text-align: center;
    
     &--facebook {
+        border-top: rem(5) solid var(--facebook);
     }
 
     &--twitter {
