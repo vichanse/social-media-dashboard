@@ -1,19 +1,21 @@
 @use '../util' as *;
 
 .cards{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: rem(30);
 
     @include breakpoint(medium){
-       flex-direction: row;
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include breakpoint(large){
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 .card {
+    flex: 1;
     background: var(--dark-card);
     color: var(--dark-text1);
-    width: rem(255); //TEMP
     padding: rem(25);
     border-radius: rem(5);
     text-align: center;
