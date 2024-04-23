@@ -1,5 +1,15 @@
 @use '../util' as *;
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: rem(30);
+
+    @include breakpoint(medium){
+       flex-direction: row;
+    }
+}
 .card {
     background: var(--dark-card);
     color: var(--dark-text1);
