@@ -13,6 +13,8 @@
     }
 }
 .card {
+    position: relative;
+    overflow: hidden;
     flex: 1;
     background: var(--dark-card);
     color: var(--dark-text1);
@@ -25,14 +27,34 @@
     }
 
     &--twitter {
+        border-top: rem(5) solid var(--twitter);
 
     }
 
     &--instagram {
-
+        padding-top: rem(30);
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: rem(5);
+            background: linear-gradient(
+                225deg, 
+                var(--instagram-end),
+                var(--instagram-middle) 50.91%,
+                var(--instagram-start) 100%
+            );
+            
+             
+        }
+    
     }
 
     &--youtube {
+        border-top: rem(5) solid var(--youtube);
 
     }
 
@@ -40,6 +62,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: rem(20);
+        margin-top: rem(5);
         margin-bottom: rem(28);
 
     }    
